@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(winget install:*)",
+      "Bash(where gh:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Bash(curl -sL https://github.com/cli/cli/releases/download/v2.88.0/gh_2.88.0_windows_amd64.zip -o /tmp/gh.zip)",
+      "Bash(unzip -o /tmp/gh.zip -d /tmp/gh)",
+      "Read(//tmp/**)",
+      "Bash(export PATH=\"/tmp/gh/bin:$PATH\")",
+      "Bash(gh --version)"
+    ]
+  }
+}
